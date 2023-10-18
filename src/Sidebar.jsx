@@ -11,6 +11,7 @@ import profile from "../src/assets/profle.png"
 
 
 
+
 function Sidebar({openSidebarToggle, OpenSidebar}) {
   return (
     <aside id="sidebar" className={openSidebarToggle ? "sidebar-responsive": ""}>
@@ -53,28 +54,18 @@ function Sidebar({openSidebarToggle, OpenSidebar}) {
                 </a>
             </li>
 
-            <li className='sidebar-list-item profile'>
-                
-                    
-                    <a>
-                        
-                        
-                       
-                        <div className='profile'>
-                           <img className='profile-photo' src={profile} />
-                        </div>
-
-                        <div className='profile-name'>
-                            Suyog  
-                        </div>
-                    </a>
-
-                    
-                    
-                    
-                
+            <li className='sidebar-list-item-profile'>
+                <table>
+                    <tr>
+                    <td><img className='profile-photo' src={profile} /></td>
+                    <td > 
+                        <h3>Suyog</h3>
+                        <h6 className='project-work'>Project Manager</h6>
+                    </td>
+                    </tr>
+                </table>
             </li>
-            
+         
         </ul>
     </aside>
   )
